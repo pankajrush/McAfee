@@ -1,0 +1,152 @@
+/* Overall popup styling */
+*{
+    box-sizing: border-box;
+}
+.warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; 
+}
+  .warning .containerWar {
+    background: #fff;
+    width: 600px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    z-index: 1100;
+  }
+  
+  /* Heading styles */
+  .warning .heading {
+    background-color: #C01818;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding: 5px 8px;
+    margin: 0.3px;
+  }
+  .heading .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .left img{
+    height: 30px;
+  }
+  .warning .heading .left h1 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .warning .heading .right h1 {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .warning .heading .right h1:hover {
+    color: black;
+  }
+  
+  /* Body styles */
+  .warning .body h2 {
+    text-align: left;
+    font-size: 15px; 
+    margin: 25px 15px;
+    font-weight: 600;
+  }
+  
+  .warning .body p {
+    text-align: left;
+    font-size: 15px;
+    color: black;
+    line-height: 1.5;
+    margin: 25px 15px;
+  }
+  
+  /* Button styling */
+  .warning .body button {
+    background-color: #C01818;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .warning .body button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Blur effect for background content */
+  body.blur {
+    filter: blur(5px); /* Apply blur effect */
+    pointer-events: none; /* Disable interactions with background */
+    user-select: none; /* Prevent text selection */
+  }
+  
+  @media (max-width: 600px) {
+    .left img{
+      height: 20px;
+    }
+    .warning .heading .left h1 {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .heading .left{
+      gap: 5px;
+    }
+    .warning .heading .right h1 {
+      font-size: 18px;
+      margin: 0px 7px;
+    }
+    .warning .body p {
+      font-size: 13px;
+      line-height: 1.3;
+      margin: 20px 15px;
+    }
+    .warning .body button {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+
+  @media (max-width: 401px) {
+    .warning .body h2{
+      font-size: 12px;
+    }
+    .left img{
+      height: 20px;
+    }
+    .warning .heading .left h1 {
+      font-size: 10.5px;
+      font-weight: 400;
+    }
+    .warning .heading .right h1 {
+      font-size: 13px;
+      margin: 0px 5px;
+    }
+    .warning .body p {
+      font-size: 13px;
+      line-height: 1.3;
+      margin: 20px 15px;
+    }
+    .warning .body button {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
