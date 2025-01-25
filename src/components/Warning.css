@@ -21,6 +21,8 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     position: relative;
+    margin-bottom: 200px;
+    top: 20px;
     z-index: 1100;
   }
   
@@ -40,9 +42,9 @@
     align-items: center;
     gap: 20px;
   }
-  .left img{
+  /* .left img{
     height: 30px;
-  }
+  } */
   .warning .heading .left h1 {
     font-size: 22px;
     font-weight: 600;
@@ -91,18 +93,17 @@
   .warning .body button:hover {
     background-color: #0056b3;
   }
-  
-  /* Blur effect for background content */
+ 
   body.blur {
-    filter: blur(5px); /* Apply blur effect */
+    filter: blur(5px);
     pointer-events: none; /* Disable interactions with background */
     user-select: none; /* Prevent text selection */
   }
   
   @media (max-width: 600px) {
-    .left img{
+    /* .left img{
       height: 20px;
-    }
+    } */
     .warning .heading .left h1 {
       font-size: 15px;
       font-weight: 500;
@@ -127,13 +128,13 @@
 
   @media (max-width: 401px) {
     .warning .body h2{
-      font-size: 12px;
+      font-size: 20px;
     }
-    .left img{
+    /* .left img{
       height: 20px;
-    }
+    } */
     .warning .heading .left h1 {
-      font-size: 10.5px;
+      font-size: 13px;
       font-weight: 400;
     }
     .warning .heading .right h1 {

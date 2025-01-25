@@ -1,9 +1,18 @@
 import React from "react";
 import "./Warning.css";
 import warn from '../assets/atten.png'
+import { useNavigate } from "react-router-dom";
 
 const Warning = () => {
+
+  const navigate = useNavigate()
+
+  const handleNextPage = () => {
+    navigate('/login')
+  }
+
   return (
+    <>
     <div className="warning">
       <div className="containerWar">
         <div className="heading">
@@ -25,10 +34,11 @@ const Warning = () => {
             vulnerable to 
             suffer from malware.
           </p>
-          <button>Clean Up Now</button>
+          <button onClick={handleNextPage}>Clean Up Now</button>
         </div>
       </div>
     </div>
+    </>
   );
 };
 

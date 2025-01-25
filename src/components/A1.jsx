@@ -92,7 +92,6 @@ const A1 = () => {
             <p className="number">{number}</p>
           </div>
         </div>
-        
       </div>
     </>
   );

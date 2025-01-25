@@ -33,7 +33,7 @@ const AutoProgressBar = () => {
     const interval = setInterval(() => {
       setProgress((prev) => (prev < 100 ? prev + 1 : 100));
       const virus = setInterval(() => {
-        setVirus((prev) => (prev < 123456 ? prev + 4 : 123456));
+        setVirus((prev) => (prev < 112256 ? prev + 4 : 112256));
       }, 20);
     }, 100);
 

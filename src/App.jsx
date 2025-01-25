@@ -1,15 +1,18 @@
-import { useState } from 'react'
-import A1 from './components/A1'
-import AutoProgressBar from './components/Autobar'
-import PopUp from './components/PopUp'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import A1 from "./components/A1";
+import Login from "./components/login/Login";
 
 function App() {
   return (
     <>
-    <A1/>
-    {/* <PopUp/> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<A1 />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
